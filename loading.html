@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        body{
+            height:100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .loading{
+            height: 200px;
+            width: 200px;
+            border: solid 10px #adadad;
+            border-radius: 50%;
+            border-right-color:blue;
+        }
+        .loading{
+            animation-name: loading;
+            animation-duration: 1s;
+        }
+        @keyframes loading{
+            100%{
+                animation-iteration-count:infinite;
+                transform:rotate(360deg);
+            }
+              }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="loading"></div>
+</body>
+</html>
